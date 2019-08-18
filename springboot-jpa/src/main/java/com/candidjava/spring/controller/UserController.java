@@ -43,6 +43,7 @@ public class UserController {
         return new ResponseEntity<User>(user, HttpStatus.OK);
     }
     
+    	//{"id":1,"country":"Canada","name":"Anuj"}
 	 @PostMapping(value="/create",headers="Accept=application/json")
 	 public ResponseEntity<Void> createUser(@RequestBody User user, UriComponentsBuilder ucBuilder){
 	     System.out.println("Creating User "+user.getName());
